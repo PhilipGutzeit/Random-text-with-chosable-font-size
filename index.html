@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Random text with chosable font size</title>
+      <link href="styles.css" rel="stylesheet" crossorigin="anonymous">
+       <script src="main.js" crossorigin="anonymous"></script>
   </head>
-
+  
   <body>
     <main>
       <div id="input">
@@ -19,7 +21,6 @@
           value="20"
           onchange="generateText()"
         />
-
         <label for="font-size">Font size:</label>
         <input
           type="number"
@@ -29,7 +30,6 @@
           onchange="setFontSize()"
         />
       </div>
-
       <div id="output">Your random text, choose number of characters above</div>
     </main>
   </body>

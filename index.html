@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Random text with chosable font size</title>
+  </head>
+
+  <body>
+    <main>
+      <div id="input">
+        <label for="characters">Number of characters:</label>
+        <input
+          type="number"
+          id="characters"
+          min="1"
+          value="20"
+          onchange="generateText()"
+        />
+
+        <label for="font-size">Font size:</label>
+        <input
+          type="number"
+          id="font-size"
+          min="8"
+          value="16"
+          onchange="setFontSize()"
+        />
+      </div>
+
+      <div id="output">Your random text, choose number of characters above</div>
+    </main>
+  </body>
+</html>
